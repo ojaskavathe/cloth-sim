@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>Cloth Sim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <canvas id="c"></canvas>
+  <div id="options">
+    <h3>params</h3>
+    <div class="option">
+      <input type="range" id="physics_accuracy" name="physics_accuracy" min="0" max="20" />
+      <label for="physics_accuracy">physics accuracy: <span id="physics_accuracy-out"></span></label>
+    </div>
+    <div class="option">
+      <input type="range" id="gravity" name="gravity" min="0" max="3000" />
+      <label for="gravity">Gravity: <span id="gravity-out"></span></label>
+    </div>
+    <div class="option">
+      <input type="range" id="cut_size" name="cut_size" min="1" max="50" />
+      <label for="cut_size">Cut Size: <span id="cut_size-out"></span></label>
+    </div>
+    <div class="option">
+      <input type="range" id="cloth_width" name="cloth_width" min="1" max="1000" />
+      <label for="cloth_width">width: <span id="cloth_width-out"></span></label>
+    </div>
+    <div class="option">
+      <input type="range" id="cloth_height" name="cloth_height" min="1" max="100" />
+      <label for="cloth_height">height: <span id="cloth_height-out"></span></label>
+    </div>
+    <div class="option">
+      <input type="range" id="spacing" name="spacing" min="1" max="50" />
+      <label for="spacing">Spacing: <span id="spacing-out"></span></label>
+    </div>
+  </div>
+  <script src="sim.ts" type="module"></script>
+</body>
+
+</html>
